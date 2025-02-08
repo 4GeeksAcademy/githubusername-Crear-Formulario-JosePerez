@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <div class="card col-md-10 offset-md-1 justify-content-center mt-5">
+      <div class="card-header">
+        <h3>Payment for example</h3>
+      </div>
+      <div class="card-body">
+        <div id="error-msg" class="alert alert-danger">Some fields are missing</div>
+        <form class="row g-3 needs-validation">
+          <div class="col-md-5 pb-3">
+            <label for="exampleAcount" class="form-label">Card #</label>
+            <input class="form-control" id="exampleAcount" placeholder="XXXXXXXXXXX" type="text" required>
+          </div>
+          <div class="col-md-3 pb-3">
+            <label for="exampleCodigo" class="form-label">CVC #</label>
+            <input class="form-control" id="exampleCodigo" placeholder="0000" type="text" required>
+          </div>
+          <div class="col-md-4 pb-3">
+            <label for="validationCustomUsername" class="form-label">Amount</label>
+            <i class="fas fa-dollar-sign"></i>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Amount" required>
+              <div class="invalid-feedback">
+                Please choose an Amount.
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 pb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input class="form-control" id="firstName" type="text" required>
+            </div>
+            <div class="col-md-6 pb-3">
+              <label for="firstName" class="form-label">Last Name</label>
+              <input class="form-control" id="lastName" type="text" required>
+            </div>
+          </div>
+          <div class="col-md-6 pb-3">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 pb-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Pick a state</option>
+              <option>Madrid</option>
+              <option>Barcelona</option>
+              <option>Toledo</option>
+              <option>Malaga</option>
+              <option>Sevilla</option>
+              <option>Leon</option>
+              <option>Avila</option>
+              <option>Segovia</option>
+              <option>Valencia</option>
+              <option>Murcia</option>
+              <option>Lugo</option>
+              <option>Ourense</option>
+              <option>Cadiz</option>
+              <option>Almeria</option>
+              <option>Santander</option>
+              <option>Caceres</option>
+              <option>Badajoz</option>
+              <option>Teruel</option>
+              <option>Zaragoza</option>
+              <option>Navarra</option>
+              <option>Bilbao</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 pb-3">
+            <label for="validationCustom05" class="form-label">Postal Code</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid postal code.
+            </div>
+          </div>
+          <div class="col-md-6 pb-3">
+            <p for="exampleAccount">We accept:</p>
+            <button type="button" class="btn btn-secondary btn-lg">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">
+                  <i class="fa-brands fa-cc-mastercard">Mastercard</i>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">
+                  <i class="fa-brands fa-cc-visa">Visa</i>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">
+                  <i class="fab fa-cc-diners-club">Dinner club</i>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                <label class="form-check-label" for="inlineRadio4">
+                  <i class="fab fa-cc-amex">Amex</i>
+                </label>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-6 pb-3">
+            <label for="exampleMessage">Message</label> 
+            <textarea class="form-control" id="ExampleMessage" rows="3"></textarea>
+            <small class="text-muted">Add any notes here.</small>
+          </div>
+        </div>
+        <div class="card-footer bg border">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
